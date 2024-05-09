@@ -1,0 +1,38 @@
+<div id="contact">
+    <div class="logo-bg">
+        <div class="contact-form">
+            <h2>Contactez-nous</h2>
+           
+                <div class="d-lg-flex d-md-block">
+                    <div class="form-control">
+                        <label class="form-label d-block">Nom</label>
+                        <input type="text" class="form-input" [(ngModel)]="contact.lastname"/>
+                    </div>
+                    <div class="form-control">
+                        <label class="form-label d-block">Prénom<span id="required-fname">*</span></label>
+                        <input id="fname" type="text" class="form-input" [(ngModel)]="contact.firstname">
+                        <span id="error-fname" class="error">Entrez votre prénom</span>
+                    </div>
+                </div>
+                <div class="form-control ">
+                    <label class="form-label d-block">Courriel<span id="required-mail">*</span></label>
+                    <input id="email" type="text" class="form-input" [(ngModel)]="contact.email">
+                    <span id="error-mail" class="error">Entrez votre courriel</span>
+                    <span id="wrong-mail" class="error">Entrez un courriel valide</span>
+                </div>
+                <div class="form-control">
+                    <label class="form-label d-block">Parlez-nous de vos projets<span id="required-details">*</span></label>
+                    <textarea id="details" type="text" class="form-input" rows="5" [(ngModel)]="contact.details"></textarea>
+                    <span id="error-details" class="error">Donnez-nous quelques détails</span>
+                </div>
+                <div class="text-end">
+                    <h5 id="submitted">Merci, votre demande à été envoyé.</h5>
+                </div>
+                <div class="form-submit">
+                    <button class="btn" (click)="onSubmit()">Envoyer</button>
+                </div>
+          
+        </div>
+    </div>
+</div>
+

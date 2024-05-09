@@ -1,0 +1,124 @@
+h2 {
+    writing-mode: vertical-lr;
+    text-orientation: Mixed;
+    margin: 0px;
+    color: #fff;
+}
+
+.service-card {
+    width: 70%;
+    max-width: 990px;
+    min-height: 580px;
+    border-radius: 0 0 0 20px;
+    border-left: 6px solid var(--primary-color3);
+    border-bottom: 1px solid var(--primary-color3);
+    border-right: 0px;
+    border-top: 0px;
+    background: var(--black-color1);
+    color: var(--gray100);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+.service-title {
+    width: 45px;
+    padding-top: 20px;
+    border-radius: 0 0 0 20px;
+    background: var(--primary-color3);
+}
+.description {
+    width: 80%;
+    margin: auto 7%;
+    padding: 20px 0;
+}
+p{
+    font: var(--font-h4);
+}
+.pitch{
+    font-weight: 400;
+    color: var(--secondary-color3);
+}
+#scroll-container{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#scroll-text{
+    width: 200%;
+    display: flex;
+  /* animation properties */
+  -moz-transform: translateX(55%);
+  -webkit-transform: translateX(55%);
+  transform: translateX(55%);
+  
+  /* -moz-animation: my-animation 15s linear infinite; */
+  -webkit-animation: anim 15s linear infinite;
+  animation: anim 15s linear infinite;
+}
+#scroll-text2 {
+    width: 200%;
+    display: flex;
+    padding-top: 10px;
+  /* animation properties */
+  -moz-transform: translateX(55%);
+  -webkit-transform: translateX(55%);
+  transform: translateX(55%);
+  
+  /* -moz-animation: my-animation 15s linear infinite; */
+  -webkit-animation: anim 17s linear infinite;
+  animation: anim 17s linear infinite;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+.c {
+    font-weight: var(--font-w4);
+    margin: 0 40px;
+}
+
+/* for Chrome */
+@-webkit-keyframes anim {
+    from { -webkit-transform: translateX(55%); }
+    to { -webkit-transform: translateX(-55%); }
+}
+@keyframes anim {
+    from {
+      -moz-transform: translateX(55%);
+      -webkit-transform: translateX(55%);
+      transform: translateX(55%);
+    }
+    to {
+      -moz-transform: translateX(-55%);
+      -webkit-transform: translateX(-55%);
+      transform: translateX(-55%);
+    }
+}
+@media only screen and (max-width: 992px){
+    .service-card{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .service-card{
+        width: 100%;
+    }
+    #scroll-text{
+        width:250%;
+    }
+}
+@media only screen and (max-width: 630px){
+    #scroll-text{
+        width:300%;
+    }
+}
+@media only screen and (max-width: 515px){
+    #scroll-text{
+        width:320%;
+    }
+}
+@media only screen and (max-width: 515px){
+    #scroll-text{
+        width:380%;
+    }
+}

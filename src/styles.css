@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color1: #0049DE;
+    --primary-color3: #0E2E70;
+    --secondary-color1: #039C78;
+    --secondary-color3: #006A51;
+    --third-color1: #E86127;
+    --error-color: #d7201d;
+    --black-color1: #000;
+    --black-color2: #000000bd;
+    --gray100: #DBDCE0;
+    --gray900: #363738;
+    --font-h1: normal normal 72px/85px Jost;
+    --font-h2: normal normal 48px/20px Jost;
+    --font-h3: normal normal 32px/35px Jost;
+    --font-h4: normal normal 24px/28px Jost;
+    --font-p1: normal normal 1.2rem Jost;
+    --font-w4: 800;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('assets/Jost/Jost-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'JostItalic';
+    src: url('assets/Jost/Jost-Italic-VariableFont_wght.ttf');
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.nav {
+    position: absolute;
+    width: 100%;
+}
+h1{
+    font: var(--font-h1);
+}
+h3{
+    font: var(--font-h3);
+}
+h4{
+    font: var(--font-h4);
+}
+p {
+    font: var(--font-p1);
+    margin: 0;
+}
+.logo {
+    width: 247px; 
+    height: 191px;
+}
+.logo-bg {
+    background-image: url("assets/p-logo.png");
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+/*xxl*/
+@media only screen and (max-width: 1400px) {
+    :root{
+        --font-h1: normal normal 58px/65px Jost;
+        --font-h3: normal normal 30px/34px Jost;
+    }
+    .logo{
+        width: 180px;
+        height: auto;
+    }
+}
+/*xl*/
+@media only screen and (max-width: 1200px){
+    :root{
+        --font-h1: normal normal 50px/55px Jost;
+        --font-h3: normal normal 26px/30px Jost;
+        --font-h4: normal normal 18px/24px Jost;
+    }
+    .logo{
+        width: 150px;
+        height: auto;
+    }
+}
+/*lg*/
+@media only screen and (max-width: 992px){
+    :root{
+        --font-h1: normal normal 40px/45px Jost;
+        --font-h3: normal normal 25px/30px Jost;
+    }
+    .logo{
+        width: 130px;
+        height: auto;
+    }
+}
+/*md*/
+@media only screen and (max-width: 768px){
+
+}
+/*sm*/
+@media only screen and (max-width: 576px){
+    :root{
+        --font-h1: normal normal 25px/30px Jost;
+        --font-h3: normal normal 17px/24px Jost;
+    }
+}
+/*xs*/
+@media only screen and (max-width: 576px){
+
+}

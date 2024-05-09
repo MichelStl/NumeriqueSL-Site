@@ -1,0 +1,35 @@
+.nav-container {
+    padding: 2rem;
+    margin: 0 5rem;
+}
+.logo {
+    position: absolute;
+    left: 10%;
+}
+.nav-link {
+    position: absolute;
+    right: 10%;
+    top: 100%;
+    z-index: 100;
+}
+.nav-item {
+    display: inline-flex;
+    margin-right: 20px;
+}
+.nav-item a {
+    color: #fff;
+    font: var(--font-h3);
+    text-decoration: none;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 10%;
+    top: 100%;
+    background: var(--secondary-color1);
+    z-index: 100;
+}
+@media screen and (max-width: 991px){
+    .nav-link{
+        top: 47%;
+    }
+}

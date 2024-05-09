@@ -1,0 +1,36 @@
+#footer {
+    height: 253px;
+    background: var(--black-color1);
+    padding: 2vw;
+}
+#footer-logo {
+    margin: 0 0 0 30px;
+}
+.navbar {
+    margin: 0 30px 0 auto;
+}
+.nav-item {
+    display: inline-flex;
+    margin-right: 20px;
+}
+.nav-item a {
+    color: #fff;
+    font: var(--font-h3);
+    text-decoration: none;
+}
+.navbar-toggler{
+    position: absolute;
+    right: 10%;
+    top: 100%;
+    background: var(--secondary-color1);
+    z-index: 100;
+}
+.cpwrite {
+    text-align: center;
+    color: #fff;
+}
+/* @media only screen and (min-width: 768px){
+    #footer-logo{
+        width: 20px;
+    }
+} */

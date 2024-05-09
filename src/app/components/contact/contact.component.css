@@ -1,0 +1,102 @@
+#contact {
+    height: 100vh;
+}
+
+h2 {
+    padding-left: 10px;
+    margin-bottom: 50px;
+    font: var(--font-h1);
+}
+.form-label {
+    font: var(--font-h4);
+    margin-bottom: 20px;
+    color: #fff;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px transparent;
+}
+.contact-form {
+    display: grid;
+    margin-top: 42px;
+    width: 70%;
+    background: #004ade8a;
+    color: #fff;
+    border-bottom: 2px solid var(--primary-color3);
+    border-right: 2px solid var(--primary-color3);
+    border-bottom-right-radius: 20px;
+    padding: 55px;
+    backdrop-filter: blur(50px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-control {
+    border: 0px;
+    margin-bottom: 50px;
+    background: transparent;
+}
+.form-input {
+    width: 100%;
+    border-bottom: 1px solid var(--primary-color3);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    min-height: 40px;
+    background: transparent;
+    font: var(--font-h3);
+    color: #fff;
+}
+.form-input:focus {
+    outline: none;
+}
+.form-submit {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    justify-content: end;
+}
+.btn {
+    width: 165px;
+    height: 5vh;
+    background: var(--primary-color3);
+    color: #fff;
+    font: var(--font-h3);
+    margin-right: 10px;
+}
+.btn:disabled {
+    border-color: var(--primary-color3);
+}
+.logo-bg{
+    overflow: auto;
+}
+.error {
+    color: var(--third-color1);
+    font: bold var(--font-p1);
+    display: none;
+    padding: 4px;
+}
+#error-fname, #error-mail, #wrong-mail {
+    margin-top: 5px;
+}
+#submitted {
+    display: none;
+}
+@media only screen and (max-width: 1200px){
+    .contact-form{
+        width: 85vw;
+    }
+}
+@media only screen and (max-width: 576px){
+    .contact-form{
+        width: 100vw;
+        padding: 20px;
+
+    }
+}
