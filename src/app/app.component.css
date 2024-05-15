@@ -2,3 +2,8 @@
     display: flex;
     background: var(--black-color2);
 }
+@media only screen and (max-width: 576px){
+    .header {
+        background: #0000009e;
+    }
+}

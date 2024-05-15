@@ -4,7 +4,13 @@ h2 {
     margin: 0px;
     color: #fff;
 }
-
+a {
+    text-decoration: none;
+    color:#fff;
+}
+a:hover {
+    text-decoration: underline;
+}
 .service-card {
     width: 70%;
     max-width: 990px;
